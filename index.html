@@ -11,17 +11,62 @@
 </head>
 <body>
   <header id="header">
-  <img id="header-img">
+  <img id="header-img" src="./logo.png" width="50" height="47">
   <nav id="nav-bar">
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
+    <ul>
+      <li class="nav-list-item">
+        <a href="#brands" class="nav-link">Brands</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#videos" class="nav-link">Videos</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#price" class="nav-link">Price</a>
+      </li>
+    </ul>
   </nav>
 </header>
-<iframe id="video" height="315" src="" frameborder="0" allowfullscreen></iframe>
-<form id="form" action="https://www.freecodecamp.com/email-submit">
-  <input id="email" placeholder="email" type="email"></input>
+<div class="container">
+  <section id="brands">
+    <ul>
+      <li class="brand-item"><strong>Bluetti</strong> products rebalance the power dynamic from the grid to people. They are for adventure seekers as much as they are for home users. The Bluetti EP500 Pro is arguably the most powerful mobile power station ever created. If you’re looking for a powerful solar generator, the new AC200 MAX might be the best solution for you. It’s time to go solar.</li>
+      <li class="brand-item"><strong>EcoFlow</strong> is a portable power and renewable energy solutions company. Since its founding in 2017, EcoFlow has provided peace-of-mind power to customers in over 85 markets through its DELTA and RIVER product lines of portable power stations and eco-friendly accessories.</li>
+      <li class="brand-item"><strong>The Flashfish</strong> ​is a completely portable power station that can provide emergency backup battery power to at-home medical devices. You can even take it in the car to power these devices from anywhere</li>
+    </ul>
+  </section>
+  <section id="videos">
+    <h2>Learn more about power stations</h2>
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mLCDXIC9lGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/E4-a8bewYrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/iwTErYbYfyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<section id="price">
+  <div class="product">
+    <h3>Bluetti</h3>
+    <img alt="power station" src="./bluetti.jpg" width="250">
+    <p class="price-descr">350$</p>
+    <button class="price-button">Buy</button>
+  </div>
+  <div class="product">
+    <h3>EcoFlow</h3>
+    <img alt="power station" src="./ecoflow.jpeg" width="250">
+    <p class="price-descr">450$</p>
+    <button class="price-button">Buy</button>
+  </div>
+  <div class="product">
+    <h3>FlashFish</h3>
+    <img alt="power station" src="./flashfish.jpg" width="250" height="250">
+    <p class="price-descr">250$</p>
+    <button class="price-button">Buy</button>
+  </div>
+</section>
+</div>
+<footer>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+  <p class="description">Enter your email to get news about new products</p>
+  <input id="email" name="email" placeholder="email" type="email"></input>
   <input id="submit" type="submit"></input>
 </form>
+</footer>
 </body>
 </html>

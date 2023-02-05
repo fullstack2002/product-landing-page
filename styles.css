@@ -5,3 +5,129 @@
   font-family: "Roboto", sans-serif, "Raleway", sans-serif;
   list-style: none;
 }
+
+#header {
+  position: fixed;
+  min-height: 75px;
+  top: 0;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #eaefed;
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0 50px;
+  }
+}
+
+.nav-list-item:last-child {
+  margin-right: 20px;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 100px auto 20px auto;
+}
+
+#brands {
+  margin-top: 30px;
+}
+
+.brand-item {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 100px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#video {
+  display: block;
+  margin: 20px auto;
+}
+
+#price {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+h3 {
+  font-weight: 500;
+  margin: 20px auto;
+}
+
+.price-descr {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.price-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 35px;
+  background-color: #a9adac;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #3f3e3e;
+}
+
+#email {
+  min-width: 150px;
+  height: 20px;
+}
+
+#submit {
+  width: 55px;
+  height: 25px;
+  background-color: white;
+  border: 2px solid #a9adac;
+}
+
+.description {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
